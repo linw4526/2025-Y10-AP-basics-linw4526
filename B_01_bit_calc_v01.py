@@ -39,6 +39,11 @@ def int_check (question,low):
 def image_calc():
     height = int_check ("Height: ",0)
     width = int_check ("Width: ", 1)
+    num_pixels = width * height
+    num_bits = num_pixels * 24
+    answer = (f"Number of pixels: {width} x {height} = {num_pixels}"
+              f" \nNumber of bits: {num_pixels} x24 = {num_bits}")
+    return answer
 
 def integer_calc():
     integer = int_check("Integer: ", 0)
